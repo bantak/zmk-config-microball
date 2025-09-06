@@ -6,7 +6,7 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-#define ZMK_MOUSE_POINTING_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 60
 
 &mt {
     flavor = "balanced";
@@ -62,12 +62,12 @@
             tapping-term-ms = <200>;
         };
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        scroll_up_down: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
     };
 
@@ -82,7 +82,7 @@
 &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND          &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE      &lt 1 RIGHT_COMMAND                             &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUMARROW {
