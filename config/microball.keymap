@@ -8,7 +8,6 @@
 #define NUM 6
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -67,6 +66,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             tap-ms = <20>;
         };
     };
@@ -82,7 +82,7 @@
 &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LEFT_ALT  &to_layer_0 LEFT_COMMAND  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE      &lt 1 RIGHT_COMMAND                             &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUMARROW {
