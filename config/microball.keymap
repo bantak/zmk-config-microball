@@ -87,8 +87,8 @@
 
         SYMBOLS {
             bindings = <
-&kp ESCAPE     &trans         &kp LA(LC(E))  &trans         &kp LC(LA(T))                                       &kp CARET      &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LA(LC(Q))  &kp LA(LC(W))  &kp LA(LC(D))  &kp LA(LC(F))  &kp LA(LC(G))  &trans              &trans           &kp BACKSLASH  &kp MINUS       &kp EQUAL     &trans                &trans
+&kp LA(LC(Q))  &kp LA(LC(W))  &kp LA(LC(E))  &trans         &kp LC(LA(T))                                       &kp CARET      &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans         &trans         &kp LA(LC(D))  &kp LA(LC(F))  &kp LA(LC(G))  &trans              &trans           &kp BACKSLASH  &kp MINUS       &kp EQUAL     &trans                &trans
 &trans         &trans         &trans         &trans         &trans         &kp LEFT_BRACE      &kp RIGHT_BRACE  &kp PIPE       &kp UNDERSCORE  &kp PLUS      &trans                &kp TILDE
 &trans         &trans         &trans         &trans         &trans         &trans              &trans           &trans                                                             &trans
             >;
