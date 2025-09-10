@@ -8,7 +8,11 @@
 #define NUM 6
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 60
 
-&mt { flavor = "hold-preferred"; };
+&mt {
+    flavor = "balanced";
+    tapping-term-ms = <100>;
+    quick-tap-ms = <0>;
+};
 
 &lt { flavor = "hold-preferred"; };
 
